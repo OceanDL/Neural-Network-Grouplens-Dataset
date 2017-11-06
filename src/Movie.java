@@ -2,8 +2,8 @@
 //Ocean Lee 11/5/17
 
 public class Movie {
-    private int budget;
-    private int revenue;
+    private double budget;
+    private double revenue;
     private double vote_average;
 
     //Default Dummy Constructor
@@ -18,7 +18,7 @@ public class Movie {
     }
 
     //Getters and Setters for movie class.
-    public int getBudget() {
+    public double getBudget() {
         return budget;
     }
 
@@ -26,7 +26,7 @@ public class Movie {
         this.budget = budget;
     }
 
-    public int getRevenue() {
+    public double getRevenue() {
         return revenue;
     }
 

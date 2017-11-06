@@ -35,8 +35,9 @@ public class NNTrainAndCompare {
             JsonArray movieArray = jsonReader.readArray();
             for(int i = 0; i < movieArray.size(); i++){
                 Movie movie = oMap.readValue(movieArray.getJsonObject(i).toString(), Movie.class);
-                double budget = sigmoid(movie.getBudget());
-                double revenue = sigmoid(movie.getRevenue());
+                double budget = sigmoid(movie.getBudget() / 100000000.0);
+                System.out.println(budget);
+                double revenue = sigmoid(movie.getRevenue() / 100000000.0);
                 double voteAverage = sigmoid(movie.getVote_average());
                 trainSet.addRow(new double[]{budget, revenue},
                         new double[]{voteAverage});
