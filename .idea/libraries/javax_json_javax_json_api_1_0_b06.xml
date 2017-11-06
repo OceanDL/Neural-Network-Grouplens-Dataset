@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javax.json:javax.json-api:1.0-b06" type="repository">
+    <properties maven-id="javax.json:javax.json-api:1.0-b06" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/json/javax.json-api/1.0-b06/javax.json-api-1.0-b06.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
