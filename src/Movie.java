@@ -37,4 +37,9 @@ public class Movie {
     public void setUserRating(double userRating) {
         this.userRating = userRating;
     }
+
+    //toString for testing
+    public String toString(){
+        return "Budget: " + budget + "Revenue: " + revenue + "User Rating: " + userRating;
+    }
 }
